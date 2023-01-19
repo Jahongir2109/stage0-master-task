@@ -15,16 +15,15 @@ public class HalfPyramid {
 //            System.out.println(str);
 //        }
         for (int i = 1; i <= cathetusLength; i++) {
-            for (int j = 1; j <= cathetusLength - i; j++) {
-                System.out.print(" ");
+            String str="";
+            for (int j = 1; j <= cathetusLength; j++) {
+                if(cathetusLength-i<j){
+                    str+="*";
+                }else {
+                    str+=" ";
+                }
             }
-            for (int j = i; j > 0; j--) {
-                System.out.print(j);
-            }
-            for (int j = 2; j <= i; j++) {
-                System.out.print(j);
-            }
-            System.out.println();
+            System.out.println(str);
         }
     }
 
